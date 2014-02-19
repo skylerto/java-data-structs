@@ -2,14 +2,14 @@ package singlyLinkedList;
 
 /**
  * 
- * A class to represent nodes in a linked list.
+ * A class to represent nodes in a linked list, using generics.
  * 
  * @author Skyler
  * @version 1.0
  */
-public class Node {
+public class Node<E> {
 
-	private String data;
+	private E data;
 	private Node next;
 
 	/**
@@ -20,7 +20,7 @@ public class Node {
 	 * @param next
 	 *            - Next node.
 	 */
-	public Node(String element, Node next) {
+	public Node(E element, Node next) {
 		this.data = element;
 		this.next = next;
 	}
@@ -30,7 +30,7 @@ public class Node {
 	 * 
 	 * @return data - data stored in element.
 	 */
-	public String getElement() {
+	public Object getElement() {
 		return this.data;
 	}
 
@@ -49,7 +49,7 @@ public class Node {
 	 * @param newData
 	 *            - Sets the nodes data.
 	 */
-	public String setElement(String newData) {
+	public Object setElement(E newData) {
 		this.data = newData;
 		return data;
 	}

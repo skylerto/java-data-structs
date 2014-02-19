@@ -6,8 +6,9 @@ package singlyLinkedList;
  * 
  * @author Skyler
  * @version 1.0
+ * @param <E>
  */
-public class SinglyLinkedList {
+public class SinglyLinkedList<E> {
 
 	Node head;
 	int size;
@@ -58,7 +59,7 @@ public class SinglyLinkedList {
 	 * 
 	 * @return
 	 */
-	public String removeFirst() {
+	public Object removeFirst() {
 
 		if (this.head.getElement() == null) {
 			throw new NullPointerException();
