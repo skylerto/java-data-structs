@@ -3,4 +3,4 @@ humbleToads
 
 This repo is strictly for study purposes. 
 
-Created from material owned by York University/their repected owners.
+Created as a test for myself, from questions/material owned by York University and their repected owners.
